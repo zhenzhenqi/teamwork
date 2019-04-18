@@ -1,0 +1,101 @@
+/* major elements */
+
+body {
+  font-family: 'Play', sans-serif;
+  background: #222;
+  color: #999;
+}
+
+.container {
+  width: 80%;
+  max-width: 500px;
+  min-width: 250px;
+  margin: 20px auto;
+}
+
+h1 {
+  margin-top: 20%;
+  text-align: center;
+  color: white;
+}
+
+.row {
+  overflow: hidden;
+}
+
+.col-4 {
+  width:33%;
+  float: left;
+}
+
+.knob-wrapper {
+  text-align: center;
+}
+
+
+/* button styles */
+
+.buttons {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.buttons-mute {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.btn {
+  display: inline-block;
+  width: 80px;
+  margin: 4px;
+  padding: 6px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.btn-green {
+  color: #6C6;
+  border: 2px solid #6C6;
+}
+
+.btn-green:hover {
+  background-color: #232;
+}
+
+.btn-yellow {
+  color: #CC6;
+  border: 2px solid #CC6;
+}
+
+.btn-yellow:hover {
+  background-color: #332;
+}
+
+.btn-red {
+  color: #C66;
+  border: 2px solid #C66;
+}
+
+.btn-red:hover {
+  background-color: #322;
+}
+
+.btn-mute {
+  width: 20px;
+  margin: 4px;
+  padding: 2px;
+  color: #999;
+  font-size: 16px;
+}
+
+.btn-mute:hover {
+  color: #BBB;
+}
+
+
+/* global override styles */
+
+.hidden {
+  display: none;
+}

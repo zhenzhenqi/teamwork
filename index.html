@@ -1,0 +1,67 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+
+  <script src="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" charset="utf-8"></script>
+  <script src="https://fonts.googleapis.com/css?family=Play" charset="utf-8"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js" charset="utf-8"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jQuery-Knob/1.2.13/jquery.knob.min.js" charset="utf-8"></script>
+</head>
+<body>
+
+<div class="container">
+  <div class="header">
+    <h1>Presentation Timer</h1>
+  </div>
+
+  <div class="row">
+    <div class="col-4 knob-wrapper">
+      <h5>9 minutes warning</h5>
+      <input type="text" value="9" size="5" id="nine-minutes-knob" />
+    </div>
+    <div class="col-4 knob-wrapper">
+      <h5>final warning</h5>
+      <input type="text" value="1" size="5" id="time-up-knob" />
+    </div>
+    <div class="col-4 knob-wrapper">
+      <h5>1 minute overtime</h5>
+      <input type="text" value="1" size="5" id="overtime-knob" />
+    </div>
+  </div>
+
+
+  <div class="buttons">
+    <a id="cmd-reset" class="btn btn-red"><i class="fa fa-undo"></i> Reset</a>
+    <a id="cmd-pause" class="btn btn-yellow hidden"><i class="fa fa-pause"></i> Pause</a>
+    <a id="cmd-go" class="btn btn-green"><i class="fa fa-play"></i> Start</a>
+  </div>
+
+  <!-- <div class="buttons-mute">
+    <a id="cmd-mute" class="btn btn-mute"><i class="fa fa-volume-up"></i></a>
+    <a id="cmd-unmute" class="btn btn-mute hidden"><i class="fa fa-volume-off"></i></a>
+  </div> -->
+
+  <div class="timer knob-wrapper">
+    <input type="text" value="1500" size="5" id="timer-display" />
+  </div>
+
+  <audio id="snd-endofbreak" preload="auto">
+    <source src="http://owentosh.com/public/codepen/endofbreak.m4a">
+    <source src="http://owentosh.com/public/codepen/endofbreak.wav">
+  </audio>
+
+  <audio id="snd-endofsession" preload="auto">
+    <source src="http://owentosh.com/public/codepen/endofsession.m4a">
+    <source src="http://owentosh.com/public/codepen/endofsession.wav">
+  </audio>
+
+</div>
+</body>
+
+<script src="./timer.js"></script>
+
+</html>
